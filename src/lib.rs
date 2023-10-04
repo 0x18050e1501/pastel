@@ -24,7 +24,7 @@ use types::{Hue, Scalar};
 ///   RGB values. This is different from comparing the HSL values. For example,
 ///   HSL has many different representations of black (arbitrary hue and
 ///   saturation values).
-#[derive(Clone)]
+#[derive(Clone, Copy)]
 pub struct Color {
     hue: Hue,
     saturation: Scalar,
